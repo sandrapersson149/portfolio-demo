@@ -7,12 +7,11 @@ position:relative;
 
 ul {
   position:absolute;
-  top:0;
+  top:15px;
   display:flex;
   left:50%;
   transform:translateX(-50%);
   list-style:none;
-  /* background-color:blue; */
   justify-content:center;
   align-items:center;
   

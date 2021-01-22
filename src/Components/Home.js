@@ -92,7 +92,7 @@ function Home() {
   return (
     <>
       <StyledDiv>
-        <p>"Posuere ac ut consequat semper. Eget sit amet tellus cras adipiscing enim eu. Leo vel orci porta non. Nunc vel risus commodo viverra maecenas accumsan. Dignissim suspendisse in est ante in nibh mauris." - Sam Lopaz</p>
+        <p>I have a passion for design and I always seek new opportunities and challenges. There is nothing I won't do to make your dream project come true. I love what I do!</p>
         <StyledDivTitle>
           <h2><span>Front end developer</span></h2>
           <h1><span>Sam Lopez</span></h1>

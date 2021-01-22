@@ -1,16 +1,71 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const StyledContactDiv = styled.div`
-background-color: #EBEBEB;
+background-color: #c1d7e6;
 height: 100vh;
-`;
+width: 100%;
+display: flex;
+justify-content: center;
 
-// function ThankYou({ name }) {
-//   return (
-//     <h2>Thank you {name}</h2>
-//   )
-// }
+h2 {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 40%;
+  width: 20%;
+
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 4px 2px 7px rgba(99,99,99,0.3);
+  label {
+    font-size: 20px;
+    color: #003C52;
+    margin: 7px 0;
+  }
+  input {
+    width: 100%;
+    height: 25px;;
+    font-size: 15px;
+    border: 1px solid silver;
+    border-radius: 10px;
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 10px;
+  }
+  button {
+    background: #D84797;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(99,99,99,0.73);
+  }
+  button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+`;
 
 
 function Contact(props) {
@@ -19,6 +74,7 @@ function Contact(props) {
   // console.log(submitHandler)
   return (
     <StyledContactDiv>
+      <h2>Do you need help with a project? Send me a message!</h2>
       <form onSubmit={props.submitHandler}>
         <label>Name:
           <input
@@ -28,9 +84,9 @@ function Contact(props) {
           ></input>
         </label>
         <label>Message:
-          <textarea></textarea>
+          <textarea placeholder="write your text here..."></textarea>
         </label>
-        <input type='submit' value='Submit'></input>
+        <button type='submit' value='Submit'>Send</button>
       </form>
 
       {/* <ThankYou name={props.name} /> */}
