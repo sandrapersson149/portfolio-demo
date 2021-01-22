@@ -32,7 +32,7 @@ a{
   color: white;
 }
 a:hover{
-  color:magenta;
+  color: #D84797;
 }
 `
 const Navbar = () => {

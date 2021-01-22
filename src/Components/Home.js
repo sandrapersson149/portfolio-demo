@@ -5,23 +5,103 @@ const StyledDiv = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
+    
     p {
         color:white;
-        font-size:20px;
+        font-size:25px;
         position:absolute;
         left:20%;
-        top:40%;
-        max-width:350px;
-        line-height:25px;
+        top:35%;
+        max-width:450px;
+        line-height:28px;
+        letter-spacing: 1px;
+    }
+`;
+// transform: rotate(360deg);
+// transform-origin: top left;
+const StyledDivTitle = styled.div`
+/* position: absolute; */
+/* right:20%;
+top:30%; */
+color: white;
+h1 {
+    background-color: rgb(224, 224, 224, 0.2);
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    color: #fff;
+    border:3px solid white;
+    display: block;
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      span{
+      top: 35%;
+      right: 10%;
+      position: absolute;
+      font-size: 50px;
+      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      }
+    }
+h2 {
+    background-color: rgb(224, 224, 224, 0.1);
+    position: absolute;
+    top: 25%;
+    right: 13%;
+    color: #fff;
+    border:3px solid white;
+    display: block;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      span{
+      top: 15%;
+      left: 10%;
+      position: absolute;
+      font-size: 30px;
+      font-weight: 200;
+      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      }
+    }
+h3 {
+    background-color: rgb(224, 224, 224, 0.1);
+    position: absolute;
+    top: 55%;
+    right: 32%;
+    color: #fff;
+    border:3px solid white;
+    display: block;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      span{
+      top: 35%;
+      right: 18%;
+      position: absolute;
+      font-size: 30px;
+      font-weight: 200;
+      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      }
     }
 `;
 
 function Home() {
   return (
-    <StyledDiv>
-      <p>"Posuere ac ut consequat semper. Eget sit amet tellus cras adipiscing enim eu. Leo vel orci porta non. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Odio tempor orci dapibus ultrices in iaculis nunc. Dignissim suspendisse in est ante in nibh mauris." - Namn Efternamn</p>
-    </StyledDiv>
+    <>
+      <StyledDiv>
+        <p>"Posuere ac ut consequat semper. Eget sit amet tellus cras adipiscing enim eu. Leo vel orci porta non. Nunc vel risus commodo viverra maecenas accumsan. Dignissim suspendisse in est ante in nibh mauris." - Sam Lopaz</p>
+        <StyledDivTitle>
+          <h2><span>Front end developer</span></h2>
+          <h1><span>Sam Lopez</span></h1>
+          <h3><span>JavaScript</span></h3>
+        </StyledDivTitle>
+
+      </StyledDiv>
+
+    </>
   );
 }
 export default Home;
