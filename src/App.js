@@ -34,7 +34,7 @@ function App() {
   function ThankYou(props) {
     console.log('func ran' + props.name);
     return (
-      <Styledh2>Thank you {props.name}</Styledh2>
+      <Styledh2>Thank you {props.name} for your message</Styledh2>
     )
   }
 
@@ -42,7 +42,7 @@ function App() {
   const submitHandler = (e) => {
     e.preventDefault();
     // setName(e.target.value);
-    setName('');
+    setName(name);
     setShowForm(false);
     setShowThanks(true);
 
