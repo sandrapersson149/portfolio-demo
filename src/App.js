@@ -10,9 +10,11 @@ import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  body{background-color:black;}
 * {
   margin: 0;
-  font-family: Helvetica;
+  /* font-family: Helvetica; */
+  font-family: 'Work Sans', sans-serif;
 }
 `
 

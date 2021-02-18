@@ -19,7 +19,7 @@ ul {
 }
 li{
   font-family:Helvetica;
-  font-weight:200;
+  font-weight:300;
   letter-spacing:1px;
   margin:15px 30px;
   font-size:30px;

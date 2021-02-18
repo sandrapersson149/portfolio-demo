@@ -14,7 +14,6 @@ const StyledDiv = styled.div`
         top:35%;
         max-width:450px;
         line-height:28px;
-        letter-spacing: 1px;
     }
 `;
 // transform: rotate(360deg);

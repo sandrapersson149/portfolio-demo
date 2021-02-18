@@ -2,7 +2,7 @@ import styled from 'styled-components';
 // import { useState } from 'react';
 
 const StyledContactDiv = styled.div`
-background-color: #c1d7e6;
+background-color: black;
 height: 100vh;
 width: 100%;
 display: flex;
