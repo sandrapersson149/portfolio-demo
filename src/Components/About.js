@@ -1,5 +1,5 @@
-// import Weather from './Weather';
-// import Github from './Github';
+import Weather from './Weather';
+import BarChart from './BarChart';
 import styled from 'styled-components';
 // import styled, { keyframes } from 'styled-components';
 
@@ -11,6 +11,9 @@ color:white;
 display:flex;
 
 `
+const BarDiv = styled.div`
+padding-top: 700px;`
+
 const TextContainer = styled.div`
    animation-name: moveInleft;
     animation-duration: 3s;
@@ -72,18 +75,24 @@ img {
 function About() {
 
   return (
-    <AboutWrapper>
-      {/* <Weather />
-    <Github /> */}
-      <TextContainer>
-        <h3>Hi, I´m Sam!</h3>
-        <p>I’ve spent the past 5+ years working with digital design; front-end development, marketing site pages, app UI/UX, to my current role designing products for mobile platforms.</p>
-        <p>I enjoy researching, designing, prototyping, and coding. Out of the office you’ll find me traveling, playing piano, and hanging out with my family.</p>
-      </TextContainer>
-      <ImgContainer>
-        <img src='https://images.unsplash.com/photo-1552504462-0c6b5fef0925?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg3fHxtYW4lMjBpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt='Sam Lopez'></img>
-      </ImgContainer>
-    </AboutWrapper>
+    <div>
+
+      <AboutWrapper>
+
+        <TextContainer>
+          <h3>Hi, I´m Sam!</h3>
+          <p>I’ve spent the past 5+ years working with digital design; front-end development, marketing site pages, app UI/UX, to my current role designing products for mobile platforms.</p>
+          <p>I enjoy researching, designing, prototyping, and coding. Out of the office you’ll find me traveling, playing piano, and hanging out with my family.</p>
+        </TextContainer>
+        <ImgContainer>
+          <img src='https://images.unsplash.com/photo-1552504462-0c6b5fef0925?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg3fHxtYW4lMjBpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt='Sam Lopez'></img>
+        </ImgContainer>
+
+      </AboutWrapper>
+      <BarDiv>
+        <BarChart />
+      </BarDiv>
+    </div>
   );
 }
 
